@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#e84218bd;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
+}
+.card-cont,
+.card-contt {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  position: relative;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+}
+
+.img-bg {
+  width: 100%;
+  padding: 2px 0px;
+  background: white;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.img-cont {
+  width: 180px;
+  height: 205px;
+  overflow: hidden;
+}
+.img-cont img {
+  width: 100%;
+}
+.text-cont {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -200px;
+  height: 0px;
+  transition: 0.7s ease-in-out;
+  z-index: 0;
+  opacity: 0;
+}
+.text-con {
+  top: 0;
+  height: 80px;
+  opacity: 1;
+}
+.text-cont p {
+  font-size: 12px;
+  word-wrap: break-word;
+}
+.fas {
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+  margin: 20px 0px;
+}
+.fra {
+  transform: rotate(180deg);
+  margin-top: 0;
+}
+.card-contt:hover .text-cont {
+  top: 0;
+  height: 80px;
+  opacity: 1;
+}
+.card-contt:hover .fas {
+  transform: rotate(180deg);
+}
